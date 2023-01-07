@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Log In{% endblock %}
+
+{% block content %}
+<div class="login-container-main">
+    <div class="login-container">
+        <h1>Welcome to the Advertisement App!</h1>
+        <p>Log in to continue.</p>
+        <div>
+            <form method="post" >
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-login">Log In</button>
+            </form>
+            <div class="signup-button">
+                <p>Don't have an account?</p>
+                <button class="btn btn-login">
+                    <a href="{% url 'signup' %}">
+                    Sign Up Here
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

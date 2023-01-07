@@ -1,0 +1,151 @@
+.container {
+  max-width: 1000px;
+  padding: 5rem;
+}
+.main {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.navbar {
+  background-color: #ab8cca;
+  color: white;
+  border-bottom: 2px solid rgba(0, 0, 0, .0975);
+  padding: 1.5rem;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+}
+
+.user-section {
+  font-size: 1.5rem;
+  justify-content: flex-end;
+}
+.app-section {
+  font-size: 1.5rem;
+}
+
+.user-section a {
+  padding-left: 15px;
+}
+
+.centered-heading {
+  text-align: center;
+  padding: 2rem;
+  margin: 0;
+  color: #7d6f8b;
+}
+
+.ad-summary-table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+.ad-summary-table th {
+  border: 1px solid black;
+  padding: 8px;
+  background-color: #d4c5e2;
+  text-align: center;
+}
+
+.ad-summary-table td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: center;
+}
+
+.main-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.login-container {
+  background-color: #d4c5e2;
+  max-width: 500px;
+  padding: 2rem;
+  text-align: center;
+  font-size: x-large;
+}
+
+.login-container-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-login {
+  background: #7d6f8b;
+  color: white;
+}
+
+.btn-login a {
+  background: #7d6f8b;
+  color: white;
+}
+
+.signup-button {
+  padding: 3rem 2rem 0rem 2rem;
+  font-size: smaller;
+}
+
+.signup-container {
+  padding: 2rem;
+  font-size: large;
+}
+
+.btn-ad-input {
+  background: #ab8cca;
+  color: white;
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+.ad-input-heading {
+  padding: 2rem;
+  margin: 0;
+  color: #7d6f8b;
+}
+
+.ad-input-container {
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.ad-input-container label {
+  font-size: large;
+}
+
+.btn-logout {
+  background: #ab8cca;
+  color: white;
+  margin: 1rem 0rem 0rem 0rem;
+}
+
+.signup-container {
+  background-color: #d4c5e2;
+  padding: 2rem;
+}
+
+.signup-form {
+  background-color: #d4c5e2;
+  padding: 2rem;
+}
+
+.signup-heading {
+  padding: 2rem;
+  margin: 0;
+  color: #574d60;
+}

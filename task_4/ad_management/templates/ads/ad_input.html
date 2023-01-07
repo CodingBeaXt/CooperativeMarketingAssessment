@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Input Ad Details</title>
+{% endblock %}
+
+{% block content %}
+    <h2 class="ad-input-heading">Input Ad Details</h2>
+    <div class="ad-input-container">
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button class="btn btn-ad-input" type="submit">Calculate</button>
+        </form>
+    </div>
+{% endblock %}

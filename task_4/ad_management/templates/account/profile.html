@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>User Profile</title>
+{% endblock %}
+
+{% block content %}
+    {% if user.is_authenticated %}
+        <h2 class="ad-input-heading">User Profile</h2>
+        <div class="ad-input-container">
+            <p>Name: {{ user_profile.user.first_name }} {{ user_profile.user.last_name }}</p>
+            <p>Username: {{ user_profile.user.username }}</p>
+            <p>Email: {{ user_profile.user.email }}</p>
+            <form action="{% url 'logout' %}" method="post">
+                {% csrf_token %}
+                <button class="btn btn-logout" type="submit">Logout</button>
+            </form>
+        </div>
+    {% else %}
+        <p>You are not logged in.</p>
+    {% endif %}
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1 class="centered-heading">Ad Summary</h1>
+    <table class="ad-summary-table">
+        <tr>
+            <th>Ad Type</th>
+            <th>Date</th>
+            <th>Ads Run</th>
+            <th>Total Spend</th>
+            <th>Cost Sharing</th>
+            <th>Reimbursement</th>
+        </tr>
+        {% for ad in summary_data %}
+            <tr>
+                <td>{{ ad.ad_type }}</td>
+                <td>{{ ad.ad_date }}</td>
+                <td>{{ ad.ads_run }}</td>
+                <td>${{ ad.total_spend|floatformat:2 }}</td>
+                <td>${{ ad.cost_sharing|floatformat:2 }}</td>
+                <td>${{ ad.reimbursement|floatformat:2 }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
